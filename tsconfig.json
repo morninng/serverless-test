@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "sourceMap": true,
+    // "target": "ES6",
+    // "rootDir": "./src",
+    // "outDir": "./lib",
     "lib": [
       "es5",
       "es2015.promise"

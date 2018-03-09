@@ -10,15 +10,18 @@ provider:
   runtime: nodejs6.10
 
 functions:
-  hello:
-    handler: src/handler.hello
-    events:
-      - http:
-          method: get
-          path: hello
-  user:
-    handler: src/user.getUser
-    events:
-      - http:
-          method: get
-          path: getUser
+  # hello:
+  #   handler: src/handler.hello
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: hello
+  # user:
+  #   handler: src/user.getUser
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: getUser
+  append_header:
+    handler: src/header.append
+    role: arn:aws:iam::546915087846:role/lambda_edge_bitbank030510
